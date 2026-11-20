@@ -1,0 +1,18 @@
+# .github/workflows/sniffdog.yml: audit dependencies on every PR that touches them
+name: Supply-chain check
+on:
+  pull_request:
+    paths: ["**/requirements*.txt", "**/pyproject.toml", "**/*.lock", "**/package*.json"]
+permissions:
+  contents: read
+  security-events: write
+jobs:
+  sniffdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DoomDust7/sniffdog@v1
+        with:
+          command: audit
+          args: ". --deep --internal-prefix acme-"
+          fail-on: high

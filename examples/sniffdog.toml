@@ -1,0 +1,9 @@
+# Place at the repo root as sniffdog.toml, or under [tool.sniffdog] in pyproject.toml.
+fail_on = "high"            # exit 1 if any finding is at/above this severity
+min_severity = "low"        # hide findings below this severity
+artifact = "sdist"          # sdist | wheel | all  (which PyPI files to download)
+metadata = true             # registry reputation signals (package age, missing repo...)
+ignore_rules = ["META-*"]   # glob patterns of rule ids to drop
+ignore_paths = ["docs/*"]   # glob patterns of file paths to drop
+allow_packages = []         # packages you have reviewed and accept
+internal_prefixes = ["acme-", "@acme/"]  # private names: flag if they also exist publicly (dependency confusion)

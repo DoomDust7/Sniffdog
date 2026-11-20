@@ -1,0 +1,7 @@
+- id: sniffdog-audit
+  name: sniffdog dependency audit
+  description: Flag typosquats and dependency-confusion risks when dependency manifests change.
+  entry: sniffdog audit
+  language: python
+  files: '(requirements.*\.txt|pyproject\.toml|poetry\.lock|uv\.lock|Pipfile\.lock|package(-lock)?\.json|yarn\.lock)$'
+  pass_filenames: true

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sniffdog"
+version = "1.0.0"
+description = "Static malware detection for PyPI and npm packages: taint analysis, deobfuscation, typosquat and dependency-confusion checks."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Manav" }]
+keywords = ["security", "supply-chain", "malware", "static-analysis", "taint-analysis", "pypi", "npm", "sarif"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "rich>=13",
+  "tree-sitter>=0.23",
+  "tree-sitter-javascript>=0.23",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
+
+[project.scripts]
+sniffdog = "sniffdog.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/DoomDust7/sniffdog"
+Issues = "https://github.com/DoomDust7/sniffdog/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sniffdog"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: tests that download from PyPI/npm (deselect with -m 'not network')"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py311"
+extend-exclude = ["bench/corpus"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B904"]

@@ -11,7 +11,7 @@ build/
 htmlcov/
 *.sarif
 sniffdog-report.html
-bench/results/*.json
+
 bench/corpus/
 bench/results/benign.md
 bench/results/malicious.md

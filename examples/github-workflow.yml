@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DoomDust7/sniffdog@v1
+      - uses: DoomDust7/Sniffdog@v1
         with:
           command: audit
           args: ". --deep --internal-prefix acme-"

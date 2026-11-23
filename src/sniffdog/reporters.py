@@ -148,7 +148,7 @@ def render_sarif(results: list[ScanResult]) -> str:
             "name": "".join(w.capitalize() for w in rid.lower().split("-")),
             "shortDescription": {"text": name},
             "fullDescription": {"text": desc or name},
-            "helpUri": f"https://github.com/DoomDust7/sniffdog/blob/main/docs/rules.md#{rid.lower()}",
+            "helpUri": f"https://github.com/DoomDust7/Sniffdog/blob/main/docs/rules.md#{rid.lower()}",
             "properties": {"tags": ["security", "supply-chain"] + ([f"external/mitre-attack/{attack}"] if attack else [])},
         }
         rules.append(rule)
@@ -190,7 +190,7 @@ def render_sarif(results: list[ScanResult]) -> str:
                             "name": "Sniffdog",
                             "version": __version__,
                             "semanticVersion": __version__,
-                            "informationUri": "https://github.com/DoomDust7/sniffdog",
+                            "informationUri": "https://github.com/DoomDust7/Sniffdog",
                             "rules": rules,
                         }
                     },

@@ -20,7 +20,7 @@ from .models import Ecosystem
 
 PYPI = os.environ.get("SNIFFDOG_PYPI_URL", "https://pypi.org")
 NPM = os.environ.get("SNIFFDOG_NPM_URL", "https://registry.npmjs.org")
-UA = f"sniffdog/{__version__} (+https://github.com/DoomDust7/sniffdog)"
+UA = f"sniffdog/{__version__} (+https://github.com/DoomDust7/Sniffdog)"
 MAX_DOWNLOAD = 200 * 1024 * 1024
 
 
